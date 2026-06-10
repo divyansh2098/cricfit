@@ -1,7 +1,32 @@
 {
   "expo": {
-    "name": "coach-app-tmp",
-    "slug": "coach-app-tmp",
-    "version": "1.0.0"
+    "name": "CricFit",
+    "slug": "cricfit",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "backgroundColor": "#0f172a"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.cricfit.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0f172a"
+      },
+      "package": "com.cricfit.app"
+    },
+    "plugins": [
+      "expo-sqlite",
+      "react-native-fast-tflite",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow CricFit to access your photos to analyze cricket videos."
+        }
+      ]
+    ]
   }
 }

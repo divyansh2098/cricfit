@@ -1,8 +1,9 @@
 import './global.css';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { StatusBar } from 'expo-status-bar';
+import { initDatabase } from './src/db/client';
 
 import HomeScreen from './app/index';
 import DashboardScreen from './app/tracker/dashboard';
@@ -15,6 +16,10 @@ import ResultScreen from './app/analyzer/result';
 const Stack = createNativeStackNavigator();
 
 export default function App() {
+  useEffect(() => {
+    initDatabase();
+  }, []);
+
   return (
     <NavigationContainer>
       <StatusBar style="light" />

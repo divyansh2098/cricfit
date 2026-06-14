@@ -249,7 +249,6 @@ export default function LogInningsScreen() {
   return (
     <SafeAreaView className="flex-1 bg-background">
       <KeyboardAvoidingView
-        className="flex-1"
         behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
       >
         {/* Header with progress bar */}
@@ -273,7 +272,6 @@ export default function LogInningsScreen() {
         </View>
 
         <ScrollView
-          className="flex-1"
           contentContainerStyle={{ flexGrow: 1 }}
           keyboardShouldPersistTaps="handled"
           showsVerticalScrollIndicator={false}

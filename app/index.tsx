@@ -8,7 +8,7 @@ export default function HomeScreen() {
 
   return (
     <SafeAreaView className="flex-1 bg-background">
-      <View className="flex-1 px-5 pt-8">
+      <View className="px-5 pt-8">
         <Text className="text-primary text-sm font-semibold tracking-widest uppercase mb-1">
           Cricket
         </Text>

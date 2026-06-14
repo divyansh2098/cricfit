@@ -10,6 +10,7 @@
     },
     "ios": {
       "supportsTablet": false,
+      "bundler": "metro",
       "bundleIdentifier": "com.cricfit.app"
     },
     "android": {

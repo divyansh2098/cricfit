@@ -16,7 +16,10 @@
       "adaptiveIcon": {
         "backgroundColor": "#0f172a"
       },
-      "package": "com.cricfit.app"
+      "package": "com.cricfit.app",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "plugins": [
       "expo-sqlite",
@@ -26,7 +29,23 @@
         {
           "photosPermission": "Allow CricFit to access your photos to analyze cricket videos."
         }
-      ]
-    ]
+      ],
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "Allow $(PRODUCT_NAME) to use the microphone.",
+          "speechRecognitionPermission": "Allow $(PRODUCT_NAME) to use speech recognition.",
+          "androidSpeechServicePackages": [
+            "com.google.android.googlequicksearchbox"
+          ]
+        }
+      ],
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "f0f9472b-c537-434b-8669-cf88f7696cfb"
+      }
+    }
   }
 }

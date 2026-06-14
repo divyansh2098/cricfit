@@ -19,7 +19,7 @@ import Animated, {
 } from 'react-native-reanimated';
 import * as Haptics from 'expo-haptics';
 import { useNavigation } from '@react-navigation/native';
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons } from '@react-native-vector-icons/ionicons';
 
 import { StepIndicator } from '@/components/StepIndicator';
 import { OptionPicker } from '@/components/OptionPicker';
@@ -33,7 +33,7 @@ import {
   MatchScenario,
   Dismissal,
   Mindset,
-} from '@/types/index';
+} from '@/types';
 
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
 const TOTAL_STEPS = 9;

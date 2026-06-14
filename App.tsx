@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { StatusBar } from 'expo-status-bar';
-import { initDatabase } from './src/db/client';
+import { initDatabase } from '@/db/client';
 
 import HomeScreen from './app/index';
 import DashboardScreen from './app/tracker/dashboard';
@@ -32,7 +32,7 @@ export default function App() {
           contentStyle: { backgroundColor: '#0f172a' },
         }}
       >
-        <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
+        <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: true }} />
         <Stack.Screen name="TrackerDashboard" component={DashboardScreen} options={{ title: 'Performance' }} />
         <Stack.Screen name="LogInnings" component={LogInningsScreen} options={{ title: 'Log Innings' }} />
         <Stack.Screen name="InningsHistory" component={HistoryScreen} options={{ title: 'History' }} />

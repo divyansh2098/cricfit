@@ -167,11 +167,11 @@ created_at      TEXT
 **Goal:** User can browse all logged innings.
 
 **Tasks:**
-- [ ] 3.1 — List view of all innings, sorted by date descending
-- [ ] 3.2 — Each card shows: date, format, opponent, runs scored, dismissal, mindset badge
-- [ ] 3.3 — Tap to open detail view (all fields read-only)
-- [ ] 3.4 — Swipe-to-delete with confirmation dialog
-- [ ] 3.5 — Filter by format (chip selector at top)
+- [x] 3.1 — List view of all innings, sorted by date descending
+- [x] 3.2 — Each card shows: date, format, opponent, runs scored, dismissal, mindset badge
+- [x] 3.3 — Tap to open detail view (all fields read-only)
+- [x] 3.4 — Swipe-to-delete with confirmation dialog
+- [x] 3.5 — Filter by format (chip selector at top)
 
 **Deliverable:** History screen with detail view and delete working.
 
@@ -181,14 +181,14 @@ created_at      TEXT
 **Goal:** Visual summary of batting performance.
 
 **Tasks:**
-- [ ] 4.1 — Career overview cards: total innings, runs, average, highest score, 4s, 6s
-- [ ] 4.2 — Form chart: bar chart of runs scored across last 10 innings
-- [ ] 4.3 — Strike rate trend: line chart over last 10 innings
-- [ ] 4.4 — Dismissal breakdown: donut chart with legend
-- [ ] 4.5 — Mindset vs Performance: bar chart — avg runs by Confident/Neutral/Nervous
-- [ ] 4.6 — Match situation breakdown: avg runs when chasing vs setting
-- [ ] 4.7 — Format filter: filter all dashboard stats by format (All / T20 / ODI / Test / Club)
-- [ ] 4.8 — Empty state UI for new users with zero innings logged
+- [x] 4.1 — Career overview cards: total innings, runs, average, highest score, 4s, 6s
+- [x] 4.2 — Form chart: bar chart of runs scored across last 10 innings
+- [x] 4.3 — Strike rate trend: line chart over last 10 innings
+- [x] 4.4 — Dismissal breakdown: donut chart with legend
+- [x] 4.5 — Mindset vs Performance: bar chart — avg runs by Confident/Neutral/Nervous
+- [x] 4.6 — Match situation breakdown: avg runs when chasing vs setting
+- [x] 4.7 — Format filter: filter all dashboard stats by format (All / T20 / ODI / Test / Club)
+- [x] 4.8 — Empty state UI for new users with zero innings logged
 
 **Deliverable:** Full dashboard rendering correctly with seed data; empty state handled.
 

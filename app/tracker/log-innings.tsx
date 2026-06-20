@@ -209,7 +209,7 @@ export default function LogInningsScreen() {
       const now = new Date().toISOString();
       const balls = parseInt(form.ballsFaced || '0');
       const runs = parseInt(form.runsScored || '0');
-      insertInnings({
+      await insertInnings({
         date: now.split('T')[0],
         format: form.format!,
         opponent: form.opponent.trim(),
@@ -229,7 +229,7 @@ export default function LogInningsScreen() {
         mindsetNotes: form.mindsetNotes,
         createdAt: now,
       });
-      Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+      await Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
       navigation.navigate('TrackerDashboard', { saved: true });
     } catch {
       Alert.alert('Error', 'Could not save innings. Please try again.');
